@@ -320,7 +320,8 @@ BODY
                     spellcheck="true"
                     role="textbox"
                     aria-label="Message"
-                    aria-multiline="true">
+                    aria-multiline="true"
+                    data-placeholder="Ask anything...">
                 </div>
 
                 <span
@@ -335,7 +336,8 @@ BODY
 
             <div
                 id="attachmentPreview"
-                aria-live="polite">
+                aria-live="polite"
+                aria-label="Selected files">
             </div>
 
             <div id="inputToolbar">
@@ -371,7 +373,7 @@ BODY
                             viewBox="0 0 24 24"
                             aria-hidden="true">
                             <path
-                                d="M8 4H4v4M16 4h4v4M20 16v4h-4M4 16v4h4"
+                                d="M9 4H4v5M15 4h5v5M20 15v5h-5M4 15v5h5"
                                 fill="none"
                                 stroke="currentColor"
                                 stroke-linecap="round"
@@ -392,7 +394,15 @@ BODY
                             viewBox="0 0 24 24"
                             aria-hidden="true">
                             <path
-                                d="M12 5l5 5m-5-5l-5 5m5-5v14"
+                                d="M12 19V6"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2">
+                            </path>
+                            <path
+                                d="M6 11l6-6 6 6"
                                 fill="none"
                                 stroke="currentColor"
                                 stroke-linecap="round"
