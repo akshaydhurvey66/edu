@@ -1,0 +1,221 @@
+/*==================================================
+File Name   : shell.css
+Module      : Layout
+Version     : 0.1
+Project     : Edu Work
+Purpose     : Main Application Shell Layout
+==================================================*/
+
+
+
+/*==================================================
+SECTION 01
+APPLICATION SHELL
+==================================================*/
+
+#app{
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    width:100%;
+
+    height:100dvh;
+
+    overflow:hidden;
+
+    background:var(--bg-primary);
+
+}
+
+
+/*==================================================
+SECTION 02
+HEADER AREA
+Fixed Top
+==================================================*/
+
+#appHeader{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    right:0;
+
+    height:var(--header-height);
+
+    z-index:var(--z-header);
+
+}
+
+
+
+/*==================================================
+SECTION 03
+SIDEBAR AREA
+Off Canvas
+==================================================*/
+
+/* Sidebar Layout is controlled by sidebar.css */
+
+/*==================================================
+SECTION 04
+MAIN CONTENT
+Only Scroll Area
+==================================================*/
+
+#appContent{
+
+    position:absolute;
+
+    top:var(--header-height);
+
+    left:0;
+
+    right:0;
+    
+    bottom:0;
+
+    overflow-y:auto;
+
+    overflow-x:hidden;
+
+    -webkit-overflow-scrolling:touch;
+
+    background:var(--bg-primary);
+
+}
+
+
+
+/*==================================================
+SECTION 05
+BOTTOM BAR
+Fixed Bottom
+==================================================*/
+
+
+
+/*==================================================
+SECTION 06
+SAFE AREA SUPPORT
+==================================================*/
+
+#appHeader{
+
+    padding-top:var(--safe-top);
+
+}
+
+
+
+/*==================================================
+SECTION 07
+CONTENT SPACING
+==================================================*/
+
+#appContent{
+
+    padding:
+
+        20px
+
+        16px
+
+        calc(20px + var(--safe-bottom));
+
+}
+
+
+
+/*==================================================
+SECTION 08
+SCROLL BEHAVIOUR
+==================================================*/
+
+#appContent{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+/*==================================================
+SECTION 09
+SIDEBAR OVERLAY
+==================================================*/
+
+#sidebarOverlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.35);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.30s;
+
+    z-index:1090;
+
+}
+
+
+
+/*==================================================
+SECTION 10
+LANDSCAPE SUPPORT
+==================================================*/
+
+@media (orientation:landscape){
+
+    #sidebar{
+
+        width:320px;
+
+    }
+
+}
+
+
+
+/*==================================================
+SECTION 11
+LARGE SCREENS
+==================================================*/
+
+@media (min-width:768px){
+
+    #app{
+
+        max-width:520px;
+
+        margin:auto;
+
+    }
+
+}
+
+
+/*==================================================
+SECTION 12
+OVERLAY OPEN
+==================================================*/
+
+#sidebarOverlay.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}

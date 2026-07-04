@@ -1,0 +1,229 @@
+/*==================================================
+File Name   : dark.css
+Module      : Theme
+Version     : 0.2
+Project     : Edu Work
+Purpose     : Dark Theme
+==================================================*/
+
+
+
+/*==================================================
+SECTION 01
+DARK THEME
+==================================================*/
+
+body.dark{
+
+    color-scheme:dark;
+
+}
+
+
+
+/*==================================================
+SECTION 02
+COLOR VARIABLES
+==================================================*/
+
+body.dark{
+
+    --bg-primary:#1A1A1A;
+
+    --bg-app:#1A1A1A;
+
+    --bg-surface:#242424;
+
+    --bg-card:#2E2E2E;
+
+    --text-primary:#F5F5F5;
+
+    --text-secondary:#B8B8B8;
+
+    --border-color:#3B3B3B;
+
+}
+
+
+
+/*==================================================
+SECTION 03
+APPLICATION
+==================================================*/
+
+body.dark{
+
+    background:var(--bg-primary);
+
+    color:var(--text-primary);
+
+}
+
+
+
+/*==================================================
+SECTION 04
+HEADER
+==================================================*/
+
+body.dark #appHeader{
+
+    background:var(--bg-surface);
+
+    border-bottom:1px solid var(--border-color);
+
+}
+
+
+
+/*==================================================
+SECTION 05
+SIDEBAR
+==================================================*/
+
+body.dark #sidebar{
+
+    background:var(--bg-surface);
+
+}
+
+
+
+/*==================================================
+SECTION 06
+MAIN CONTENT
+==================================================*/
+
+body.dark #appContent{
+
+    background:var(--bg-primary);
+
+}
+
+
+
+/*==================================================
+SECTION 07
+BOTTOM BAR
+==================================================*/
+
+body.dark #bottomBar{
+
+    background:var(--bg-surface);
+
+}
+
+
+
+/*==================================================
+SECTION 08
+INPUT AREA
+==================================================*/
+
+body.dark .input-area{
+
+    background:var(--bg-card);
+
+    border-color:var(--border-color);
+
+}
+
+
+
+/*==================================================
+SECTION 09
+TEXTAREA
+==================================================*/
+
+body.dark textarea{
+
+    color:var(--text-primary);
+
+}
+
+
+
+/*==================================================
+SECTION 10
+PLACEHOLDER
+==================================================*/
+
+body.dark textarea::placeholder{
+
+    color:var(--text-secondary);
+
+}
+
+
+
+/*==================================================
+SECTION 11
+BUTTON
+==================================================*/
+
+body.dark .bottom-button{
+
+    background:var(--color-primary);
+
+}
+
+
+body.dark #sendButton{
+
+    color:#FFFFFF;
+
+}
+
+
+
+/*==================================================
+SECTION 12
+WELCOME SCREEN
+==================================================*/
+
+body.dark #welcomeScreen{
+
+    color:var(--text-primary);
+
+}
+
+
+
+/*==================================================
+SECTION 13
+OVERLAY
+==================================================*/
+
+body.dark #sidebarOverlay{
+
+    background:rgba(0,0,0,.55);
+
+}
+
+
+
+/*==================================================
+SECTION 14
+CARD
+==================================================*/
+
+body.dark .card{
+
+    background:var(--bg-card);
+
+    border:1px solid var(--border-color);
+
+}
+
+
+
+/*==================================================
+SECTION 15
+MENU ACTIVE
+==================================================*/
+
+body.dark .sidebar-item.active{
+
+    color:#FFFFFF;
+
+}

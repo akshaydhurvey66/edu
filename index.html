@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<!--==================================================
+File Name   : index.html
+Module      : App Shell
+Version     : 0.1
+Project     : Edu Work
+Purpose     : Main entry point of the application
+===================================================-->
+
+<html lang="en">
+
+<!--==================================================
+HEAD
+===================================================-->
+
+<head>
+
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Mobile Responsive -->
+    <meta
+        name="viewport"
+        content="width=device-width,
+                 initial-scale=1,
+                 maximum-scale=1,
+                 user-scalable=no,
+                 viewport-fit=cover">
+
+    <!-- Browser Theme Color -->
+    <meta
+        name="theme-color"
+        content="#6C63FF">
+
+    <!-- Application Title -->
+    <title>Edu Work</title>
+
+    <!-- PWA Manifest -->
+    <link
+        rel="manifest"
+        href="manifest.json">
+
+    <!--==================================================
+    CORE CSS
+    ===================================================-->
+
+    <link rel="stylesheet" href="css/core/reset.css">
+    <link rel="stylesheet" href="css/core/variables.css">
+    <link rel="stylesheet" href="css/core/app.css">
+
+    <!--==================================================
+    LAYOUT CSS
+    ===================================================-->
+
+    <link rel="stylesheet" href="css/layout/shell.css">
+    <link rel="stylesheet" href="css/layout/header.css">
+    <link rel="stylesheet" href="css/layout/sidebar.css">
+    <link rel="stylesheet" href="css/layout/inputBox.css">
+
+    <!--==================================================
+    THEME
+    ===================================================-->
+
+    <link rel="stylesheet" href="css/themes/light.css">
+    
+    <link rel="stylesheet" href="css/themes/dark.css">
+
+</head>
+
+<!--==================================================
+BODY
+===================================================-->
+
+<body>
+
+    <!--==================================================
+    APPLICATION SHELL
+    Everything inside this container
+    ===================================================-->
+
+    <div id="app">
+
+        <!--==================================================
+        HEADER
+        ===================================================-->
+
+<header id="appHeader">
+
+    <!-- Left -->
+
+    <div class="header-left">
+
+        <button
+            id="menuButton"
+            class="header-button"
+            type="button">
+
+            ☰
+
+        </button>
+
+    </div>
+
+    <!-- Center -->
+
+    <div class="header-center">
+
+        <h1
+            id="projectTitle">
+
+            Edu Work
+
+        </h1>
+
+    </div>
+
+    <!-- Right -->
+
+    <div class="header-right">
+
+        <button
+            id="themeButton"
+            class="header-button"
+            type="button">
+
+            🌙
+
+        </button>
+
+        <button
+            id="moreButton"
+            class="header-button"
+            type="button">
+
+            ⋮
+
+        </button>
+
+    </div>
+
+</header>
+
+        <!--==================================================
+        SIDEBAR
+        ===================================================-->
+
+        <aside id="sidebar">
+
+    <!--=========================================
+    Sidebar Header
+    ==========================================-->
+
+    <div class="sidebar-header">
+
+        <h2>
+
+            Edu Work
+
+        </h2>
+
+    </div>
+
+    <!--=========================================
+    Sidebar Menu
+    ==========================================-->
+
+    <nav class="sidebar-menu">
+
+        <button
+            id="homeButton"
+            class="sidebar-item active">
+
+            🏠 Home
+
+        </button>
+
+        <button
+            id="projectsButton"
+            class="sidebar-item">
+
+            📁 Projects
+
+        </button>
+
+        <button
+            id="historyButton"
+            class="sidebar-item">
+
+            🕒 History
+
+        </button>
+
+        <button
+            id="settingsButton"
+            class="sidebar-item">
+
+            ⚙ Settings
+
+        </button>
+
+        <button
+            id="aboutButton"
+            class="sidebar-item">
+
+            ℹ About
+
+        </button>
+
+    </nav>
+
+    <!--=========================================
+    Sidebar Footer
+    ==========================================-->
+
+    <div class="sidebar-footer">
+
+        Version 0.2
+
+    </div>
+
+</aside>
+
+        <!--==================================================
+        MAIN CONTENT
+        Only this area will scroll
+        ===================================================-->
+
+        <main id="appContent">
+
+    <!--=========================================
+    Welcome Screen
+    Shown when no project is created
+    ==========================================-->
+
+    <section id="welcomeScreen">
+
+        <div class="welcome-box">
+
+            <h2>
+
+                Welcome to Edu Work
+
+            </h2>
+
+            <p>
+
+                Create your first project to start working.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+    Workspace
+    Chat Timeline Area
+    Hidden until first project
+    ==========================================-->
+
+    <section
+        id="workspace"
+        class="hidden">
+
+        <div
+            id="timeline">
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+    Future Tools Area
+
+    Notepad
+
+    PDF
+
+    Templates
+
+    Smart Engine
+
+    ==========================================-->
+
+    <section
+        id="toolsArea"
+        class="hidden">
+
+    </section>
+
+</main>
+
+
+
+
+
+
+        <!--==================================================
+        inputBox
+        ===================================================-->
+
+
+
+
+
+<footer id="inputBox">
+
+    <div id="inputContainer">
+
+        <div
+            id="editorArea"
+            class="is-empty">
+
+            <div id="composerField">
+
+                <div
+                    id="inputEditor"
+                    contenteditable="true"
+                    spellcheck="true"
+                    role="textbox"
+                    aria-label="Message"
+                    aria-multiline="true">
+                </div>
+
+                <span
+                    id="inputPlaceholder"
+                    aria-hidden="true">
+
+                    Ask anything...
+
+                </span>
+
+            </div>
+
+            <div
+                id="attachmentPreview"
+                aria-live="polite">
+            </div>
+
+            <div id="inputToolbar">
+
+                <button
+                    id="addButton"
+                    type="button"
+                    aria-label="Add files">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true">
+                        <path
+                            d="M12 5v14M5 12h14"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2">
+                        </path>
+                    </svg>
+
+                </button>
+
+                <div id="toolbarActions">
+
+                    <button
+                        id="expandButton"
+                        type="button"
+                        aria-label="Expand composer">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true">
+                            <path
+                                d="M8 4H4v4M16 4h4v4M20 16v4h-4M4 16v4h4"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2">
+                            </path>
+                        </svg>
+
+                    </button>
+
+                    <button
+                        id="sendButton"
+                        type="button"
+                        disabled
+                        aria-label="Send message">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true">
+                            <path
+                                d="M12 5l5 5m-5-5l-5 5m5-5v14"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2">
+                            </path>
+                        </svg>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <input
+            id="filePicker"
+            type="file"
+            accept="image/*,.pdf,.doc,.docx,.txt,.zip,.rar"
+            multiple
+            hidden>
+
+    </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+<div id="sidebarOverlay"></div>
+
+<div id="toastMessage"></div>
+
+<div id="loadingScreen"></div>
+
+<div id="modalContainer"></div>
+
+    </div>
+
+    <!--==================================================
+    CORE JAVASCRIPT
+    ===================================================-->
+
+<script type="module" src="js/core/app.js"></script>
+
+</body>
+
+</html>

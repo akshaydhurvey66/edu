@@ -1,0 +1,240 @@
+/*==================================================
+File Name   : app.css
+Module      : Core
+Version     : 0.1
+Project     : Edu Work
+Purpose     : Base application styling
+==================================================*/
+
+
+
+/*==================================================
+SECTION 01
+HTML
+==================================================*/
+
+html{
+
+    background:var(--bg-app);
+
+    color:var(--text-primary);
+
+    font-family:var(--font-family);
+
+}
+
+
+
+/*==================================================
+SECTION 02
+BODY
+==================================================*/
+
+body{
+
+    width:100%;
+
+    height:100vh;
+
+    overflow:hidden;
+
+    background:var(--bg-app);
+
+    color:var(--text-primary);
+
+    font-family:var(--font-family);
+
+    font-size:var(--font-size-md);
+
+    font-weight:var(--weight-normal);
+
+    line-height:1.5;
+
+    user-select:none;
+
+}
+
+
+
+/*==================================================
+SECTION 03
+APPLICATION
+==================================================*/
+
+#app{
+
+    position:relative;
+
+    width:100%;
+
+    height:100%;
+
+    overflow:hidden;
+
+    background:var(--bg-app);
+
+}
+
+
+
+/*==================================================
+SECTION 04
+DEFAULT PAGE ELEMENTS
+==================================================*/
+
+header,
+aside,
+main,
+footer{
+
+    display:block;
+
+}
+
+
+
+/*==================================================
+SECTION 05
+TEXT INPUT ELEMENTS
+==================================================*/
+
+input,
+textarea{
+
+    width:100%;
+
+    color:inherit;
+
+    background:transparent;
+
+}
+
+
+
+/*==================================================
+SECTION 06
+PLACEHOLDER
+==================================================*/
+
+::placeholder{
+
+    color:var(--text-secondary);
+
+}
+
+
+
+/*==================================================
+SECTION 07
+BUTTONS
+==================================================*/
+
+button{
+
+    transition:all var(--transition-fast);
+
+}
+
+
+
+/*==================================================
+SECTION 08
+ACTIVE EFFECT
+==================================================*/
+
+button:active{
+
+    transform:scale(.97);
+
+}
+
+
+
+/*==================================================
+SECTION 09
+IMAGE DEFAULT
+==================================================*/
+
+img{
+
+    user-select:none;
+
+    -webkit-user-drag:none;
+
+}
+
+
+
+/*==================================================
+SECTION 10
+TEXT SELECTION
+==================================================*/
+
+::selection{
+
+    background:var(--color-primary-light);
+
+}
+
+
+
+/*==================================================
+SECTION 11
+UTILITY
+Hidden Element
+==================================================*/
+
+.hidden{
+
+    display:none !important;
+
+}
+
+
+
+/*==================================================
+SECTION 12
+UTILITY
+No Scroll
+==================================================*/
+
+.no-scroll{
+
+    overflow:hidden !important;
+
+}
+
+
+
+/*==================================================
+SECTION 13
+UTILITY
+Disable Pointer
+==================================================*/
+
+.disabled{
+
+    pointer-events:none;
+
+    opacity:.55;
+
+}
+
+
+
+/*==================================================
+SECTION 14
+TRANSITIONS
+==================================================*/
+
+*{
+
+    transition:
+
+        background-color var(--transition-fast),
+
+        color var(--transition-fast),
+
+        border-color var(--transition-fast);
+
+}

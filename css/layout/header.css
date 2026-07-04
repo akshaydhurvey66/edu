@@ -1,0 +1,212 @@
+/*==================================================
+File Name   : header.css
+Module      : Layout
+Version     : 0.1
+Project     : Edu Work
+Purpose     : Application Header
+==================================================*/
+
+
+
+/*==================================================
+SECTION 01
+HEADER CONTAINER
+==================================================*/
+
+#appHeader{
+
+    position:sticky;
+
+    top:0;
+
+    left:0;
+
+    z-index:1000;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    width:100%;
+
+    height:64px;
+
+    padding:0 var(--space-16);
+
+    background:var(--bg-surface);
+
+    border-bottom:1px solid var(--border-color);
+
+    box-shadow:var(--shadow-small);
+
+}
+
+
+
+/*==================================================
+SECTION 02
+LEFT AREA
+==================================================*/
+
+.header-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:var(--space-12);
+
+}
+
+
+
+/*==================================================
+SECTION 03
+CENTER AREA
+==================================================*/
+
+.header-center{
+
+    flex:1;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+}
+
+
+
+/*==================================================
+SECTION 04
+TITLE
+==================================================*/
+
+.header-title{
+
+    font-size:var(--font-size-lg);
+
+    font-weight:var(--weight-semibold);
+
+    color:var(--text-primary);
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+}
+
+
+
+/*==================================================
+SECTION 05
+RIGHT AREA
+==================================================*/
+
+.header-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:var(--space-8);
+
+}
+
+
+
+/*==================================================
+SECTION 06
+HEADER BUTTON
+==================================================*/
+
+.header-button{
+
+    width:46px;
+
+    height:46px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    border-radius:50%;
+
+    background:transparent;
+
+    color:var(--text-primary);
+
+    transition:all .25s ease;
+
+}
+
+
+
+/*==================================================
+SECTION 07
+BUTTON HOVER
+==================================================*/
+
+.header-button:hover{
+
+    background:rgba(108,99,255,.12);
+
+}
+
+
+
+/*==================================================
+SECTION 08
+BUTTON ACTIVE
+==================================================*/
+
+.header-button:active{
+
+    transform:scale(.92);
+
+}
+
+
+/*==================================================
+SECTION 09
+HEADER ICON
+==================================================*/
+
+.header-icon{
+
+    font-size:20px;
+
+}
+
+
+
+/*==================================================
+SECTION 10
+RESPONSIVE
+==================================================*/
+
+@media (max-width:360px){
+
+    .header-title{
+
+        font-size:15px;
+
+    }
+
+}

@@ -1,0 +1,67 @@
+{
+    "name": "Edu Work",
+
+    "short_name": "EduWork",
+
+    "description": "Modern workspace for teachers and students.",
+
+    "start_url": ".",
+
+    "scope": ".",
+
+    "display": "standalone",
+
+    "orientation": "portrait",
+
+    "background_color": "#F5F6FA",
+
+    "theme_color": "#6C63FF",
+
+    "lang": "en",
+
+    "dir": "ltr",
+
+    "categories": [
+
+        "education",
+
+        "productivity"
+
+    ],
+
+    "icons": [
+
+        {
+
+            "src": "assets/icons/icon-192.png",
+
+            "sizes": "192x192",
+
+            "type": "image/png"
+
+        },
+
+        {
+
+            "src": "assets/icons/icon-512.png",
+
+            "sizes": "512x512",
+
+            "type": "image/png"
+
+        },
+
+        {
+
+            "src": "assets/icons/maskable-512.png",
+
+            "sizes": "512x512",
+
+            "type": "image/png",
+
+            "purpose": "maskable"
+
+        }
+
+    ]
+}

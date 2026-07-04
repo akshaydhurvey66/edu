@@ -1,0 +1,256 @@
+/*==================================================
+File Name   : sidebar.css
+Module      : Layout
+Version     : 0.1
+Project     : Edu Work
+Purpose     : Sidebar Layout
+==================================================*/
+
+
+
+/*==================================================
+SECTION 01
+SIDEBAR CONTAINER
+==================================================*/
+
+#sidebar{
+
+    position:fixed;
+
+    top:0;
+
+    left:-280px;
+
+    width:280px;
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    background:var(--bg-surface);
+
+    box-shadow:var(--shadow-large);
+
+    transition:left .30s ease;
+
+    z-index:1100;
+
+}
+
+
+
+/*==================================================
+SECTION 02
+SIDEBAR HEADER
+==================================================*/
+
+.sidebar-header{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:72px;
+
+    padding:20px;
+
+    border-bottom:1px solid var(--border-color);
+
+}
+
+
+
+/*==================================================
+SECTION 03
+APPLICATION TITLE
+==================================================*/
+
+.sidebar-title{
+
+    font-size:var(--font-size-lg);
+
+    font-weight:var(--weight-bold);
+
+}
+
+
+
+/*==================================================
+SECTION 04
+SIDEBAR CONTENT
+==================================================*/
+
+.sidebar-content{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    padding:var(--space-16);
+
+}
+
+
+
+/*==================================================
+SECTION 05
+NAVIGATION LIST
+==================================================*/
+
+.sidebar-menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-8);
+
+}
+
+
+
+/*==================================================
+SECTION 06
+MENU ITEM
+==================================================*/
+
+.sidebar-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    width:100%;
+
+    min-height:48px;
+
+    padding:12px 16px;
+
+    border:none;
+
+    background:transparent;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    color:var(--text-primary);
+
+    transition:.25s;
+
+}
+
+
+
+/*==================================================
+SECTION 07
+MENU HOVER
+==================================================*/
+
+.sidebar-item:hover{
+
+    background:rgba(108,99,255,.10);
+
+}
+
+
+
+/*==================================================
+SECTION 08
+ACTIVE ITEM
+==================================================*/
+
+.sidebar-item.active{
+
+    background:var(--color-primary);
+
+    color:#fff;
+
+    font-weight:600;
+
+}
+
+
+/*==================================================
+SECTION 09
+MENU ICON
+==================================================*/
+
+.sidebar-icon{
+
+    width:22px;
+
+    height:22px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+
+/*==================================================
+SECTION 10
+MENU LABEL
+==================================================*/
+
+.sidebar-label{
+
+    flex:1;
+
+    font-size:var(--font-size-md);
+
+}
+
+
+
+/*==================================================
+SECTION 11
+SIDEBAR FOOTER
+==================================================*/
+
+.sidebar-footer{
+
+    border-top:1px solid var(--border-color);
+
+    padding:var(--space-16);
+
+}
+
+
+
+/*==================================================
+SECTION 12
+VERSION TEXT
+==================================================*/
+
+.sidebar-version{
+
+    text-align:center;
+
+    font-size:var(--font-size-xs);
+
+    color:var(--text-secondary);
+
+}
+
+
+/*==================================================
+SECTION 13
+OPEN STATE
+==================================================*/
+
+#sidebar.open{
+
+    left:0;
+
+}

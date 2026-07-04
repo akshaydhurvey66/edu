@@ -1,0 +1,212 @@
+/*==================================================
+File Name   : reset.css
+Module      : Core
+Version     : 0.1
+Project     : Edu Work
+Purpose     : Browser reset and mobile foundation
+==================================================*/
+
+
+
+/*==================================================
+SECTION 01
+GLOBAL RESET
+Remove browser default spacing
+==================================================*/
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+/*==================================================
+SECTION 02
+HTML & BODY
+Full application size
+==================================================*/
+
+html,
+body{
+
+    width:100%;
+    height:100%;
+
+    overflow:hidden;
+
+    -webkit-text-size-adjust:100%;
+    text-size-adjust:100%;
+
+    touch-action:manipulation;
+
+}
+
+
+
+/*==================================================
+SECTION 03
+ROOT CONTAINER
+Application full height
+==================================================*/
+
+#app{
+
+    width:100%;
+    height:100%;
+
+}
+
+
+
+/*==================================================
+SECTION 04
+MEDIA ELEMENTS
+Responsive media
+==================================================*/
+
+img,
+picture,
+video,
+canvas,
+svg{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+
+
+/*==================================================
+SECTION 05
+FORM ELEMENTS
+Use application font
+==================================================*/
+
+button,
+input,
+textarea,
+select{
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    font:inherit;
+
+    color:inherit;
+
+}
+
+
+
+/*==================================================
+SECTION 06
+BUTTON RESET
+Touch friendly
+==================================================*/
+
+button{
+
+    cursor:pointer;
+
+    user-select:none;
+
+    -webkit-tap-highlight-color:transparent;
+
+}
+
+
+
+/*==================================================
+SECTION 07
+LINK RESET
+==================================================*/
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+
+
+
+/*==================================================
+SECTION 08
+LIST RESET
+==================================================*/
+
+ul,
+ol{
+
+    list-style:none;
+
+}
+
+
+
+/*==================================================
+SECTION 09
+TEXTAREA
+Prevent resize
+==================================================*/
+
+textarea{
+
+    resize:none;
+
+}
+
+
+
+/*==================================================
+SECTION 10
+TEXT SELECTION
+==================================================*/
+
+::selection{
+
+    background:rgba(108,99,255,.20);
+
+}
+
+
+
+/*==================================================
+SECTION 11
+SCROLLBAR
+Temporary hidden
+Future styling later
+==================================================*/
+
+::-webkit-scrollbar{
+
+    width:0;
+
+    height:0;
+
+}
+
+
+
+/*==================================================
+SECTION 12
+FOCUS
+Accessible outline removed
+Custom focus added later
+==================================================*/
+
+:focus{
+
+    outline:none;
+
+}

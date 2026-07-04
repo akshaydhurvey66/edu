@@ -1,0 +1,186 @@
+/*==================================================
+File Name   : light.css
+Module      : Theme
+Version     : 0.1
+Project     : Edu Work
+Purpose     : Light Theme
+==================================================*/
+
+
+
+/*==================================================
+SECTION 01
+LIGHT THEME ROOT
+==================================================*/
+
+:root{
+
+    color-scheme:light;
+
+}
+
+
+
+/*==================================================
+SECTION 02
+APPLICATION BACKGROUND
+==================================================*/
+
+body{
+
+    background:var(--bg-primary);
+
+    color:var(--text-primary);
+
+}
+
+
+
+/*==================================================
+SECTION 03
+HEADER
+==================================================*/
+
+#appHeader{
+
+    background:var(--bg-surface);
+
+    border-bottom:1px solid var(--border-color);
+
+}
+
+
+
+/*==================================================
+SECTION 04
+SIDEBAR
+==================================================*/
+
+#sidebar{
+
+    background:var(--bg-surface);
+
+}
+
+
+
+/*==================================================
+SECTION 05
+MAIN CONTENT
+==================================================*/
+
+#appContent{
+
+    background:var(--bg-primary);
+
+}
+
+
+
+/*==================================================
+SECTION 06
+BOTTOM BAR
+==================================================*/
+
+#bottomBar{
+
+    background:var(--bg-surface);
+
+}
+
+
+
+/*==================================================
+SECTION 07
+INPUT
+==================================================*/
+
+.input-area{
+
+    background:var(--bg-card);
+
+}
+
+
+
+/*==================================================
+SECTION 08
+BUTTON
+==================================================*/
+
+.bottom-button{
+
+    background:var(--color-primary);
+
+}
+
+
+
+/*==================================================
+SECTION 09
+WELCOME SCREEN
+==================================================*/
+
+#welcomeScreen{
+
+    color:var(--text-primary);
+
+}
+
+.welcome-box{
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+
+
+/*==================================================
+SECTION 10
+CARD DEFAULT
+Future Ready
+==================================================*/
+
+.card{
+
+    background:var(--bg-card);
+
+    border:1px solid var(--border-color);
+
+}
+
+
+
+/*==================================================
+SECTION 11
+TEXT COLORS
+==================================================*/
+
+.text-primary{
+
+    color:var(--text-primary);
+
+}
+
+
+
+.text-secondary{
+
+    color:var(--text-secondary);
+
+}
+
+
+
+/*==================================================
+SECTION 12
+OVERLAY
+==================================================*/
+
+#sidebarOverlay{
+
+    background:rgba(0,0,0,.35);
+
+}

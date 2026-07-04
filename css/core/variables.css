@@ -1,0 +1,268 @@
+/*==================================================
+File Name   : variables.css
+Module      : Core
+Version     : 0.1
+Project     : Edu Work
+Purpose     : Global Design System Variables
+==================================================*/
+
+
+
+/*==================================================
+SECTION 01
+PRIMARY COLORS
+Application Brand Colors
+==================================================*/
+
+:root{
+
+    --bg-primary:#F5F6FA;
+
+    --bg-app:#F5F6FA;
+
+    --bg-surface:#FFFFFF;
+
+    --bg-card:#FCFCFD;
+
+    --text-primary:#1E1E2E;
+
+    --text-secondary:#66687A;
+
+    --border-color:#E4E6EF;
+
+}
+
+
+
+/*==================================================
+SECTION 02
+LIGHT THEME COLORS
+==================================================*/
+
+:root{
+
+    --bg-app:#F5F6FA;
+
+    --bg-surface:#FFFFFF;
+
+    --bg-card:#FCFCFD;
+
+    --text-primary:#1E1E2E;
+
+    --text-secondary:#66687A;
+
+    --border-color:#E4E6EF;
+
+}
+
+
+
+/*==================================================
+SECTION 03
+SHADOWS
+==================================================*/
+
+:root{
+
+    --shadow-small:0 2px 6px rgba(0,0,0,.05);
+
+    --shadow-medium:0 8px 20px rgba(0,0,0,.08);
+
+    --shadow-large:0 12px 30px rgba(0,0,0,.12);
+
+}
+
+
+
+/*==================================================
+SECTION 04
+BORDER RADIUS
+==================================================*/
+
+:root{
+
+    --radius-small:10px;
+
+    --radius-medium:16px;
+
+    --radius-large:24px;
+
+    --radius-round:999px;
+
+}
+
+
+
+/*==================================================
+SECTION 05
+SPACING
+==================================================*/
+
+:root{
+
+    --space-4:4px;
+
+    --space-8:8px;
+
+    --space-12:12px;
+
+    --space-16:16px;
+
+    --space-20:20px;
+
+    --space-24:24px;
+
+    --space-32:32px;
+
+}
+
+
+
+/*==================================================
+SECTION 06
+HEADER & FOOTER
+==================================================*/
+
+:root{
+
+    --header-height:60px;
+
+    --bottom-bar-height:72px;
+
+}
+
+
+
+/*==================================================
+SECTION 07
+SIDEBAR
+==================================================*/
+
+:root{
+
+    --sidebar-width:280px;
+
+}
+
+
+
+/*==================================================
+SECTION 08
+TYPOGRAPHY
+==================================================*/
+
+:root{
+
+    --font-family:
+        "Inter",
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    --font-size-xs:12px;
+
+    --font-size-sm:14px;
+
+    --font-size-md:16px;
+
+    --font-size-lg:18px;
+
+    --font-size-xl:22px;
+
+}
+
+
+
+/*==================================================
+SECTION 09
+FONT WEIGHT
+==================================================*/
+
+:root{
+
+    --weight-normal:400;
+
+    --weight-medium:500;
+
+    --weight-semibold:600;
+
+    --weight-bold:700;
+
+}
+
+
+
+/*==================================================
+SECTION 10
+ANIMATION
+==================================================*/
+
+:root{
+
+    --transition-fast:.20s;
+
+    --transition-normal:.30s;
+
+    --transition-slow:.45s;
+
+    --transition-sidebar:.30s ease;
+
+}
+
+
+
+/*==================================================
+SECTION 11
+Z-INDEX
+==================================================*/
+
+:root{
+
+    --z-header:100;
+
+    --z-overlay:150;
+
+    --z-sidebar:200;
+
+    --z-modal:500;
+
+    --z-toast:700;
+
+}
+
+
+
+/*==================================================
+SECTION 12
+SAFE AREA
+==================================================*/
+
+:root{
+
+    --safe-top:env(safe-area-inset-top);
+
+    --safe-bottom:env(safe-area-inset-bottom);
+
+}
+
+
+/*==================================================
+SECTION 13
+COMPOSER
+==================================================*/
+
+:root{
+
+    --composer-min-height:56px;
+
+    --composer-max-height:45vh;
+
+    --composer-radius:24px;
+
+    --composer-padding:16px;
+
+    --composer-button-size:42px;
+
+    --composer-icon-size:36px;
+
+}
